@@ -166,3 +166,47 @@ footer{
     box-shadow:10px 10px 5px #222222;
     transform: translate(-5px,-5px);
 }
+
+/*CSS parte Incio - Agregar*/
+.parte2{
+    background-color: #f2f2f2;
+    color: #25182E;
+    font-size: 20px;
+}
+
+.apoyo{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+}
+.text-inicio{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Boton agregar*/
+.submitBtn{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #CA1F3D;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 20px;
+    opacity: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: "Raleway" sans-serif;
+    position: absolute;
+    left: 40%;
+
+}
+
+.submitBtn:hover{
+    background-color: #f84e4f;
+    transform: translateY(-2px);
+}

@@ -21,7 +21,7 @@
         <nav>
             <a href="{{url_for('inicio')}}"> Inicio </a>
             <a href="#"> Recetas </a>
-            <a href="#"> Agregar </a>
+            <a href="{{url_for('agregar')}}"> Agregar </a>
             <a href="#"> Contactos </a>
         </nav>
     </header>
@@ -125,6 +125,25 @@
             </div>
         </div>
         
+        <div class="parte2">
+            <img src="static/img/img1.png" class="apoyo">
+            <h2 class="text-inicio"> 
+                <b>
+                    Puedes subir tus recetas de manera facil y sencilla. 
+                </b>
+            </h2>
+            <p class="text-inicio" font-size="30px"> 
+                <i>
+                    "Suponer que la comida es la unica fuente de felicidad </br>
+                    es negar todos los estimulos que nos ofrece la vida."
+                </i>
+            </p>
+        </br>
+            <a href="{{url_for('agregar')}}">
+                <input type="submit" class="submitBtn" value="Agregar Receta">
+            </a>
+        </div>
+
     </br>
     </br>
     </br>
