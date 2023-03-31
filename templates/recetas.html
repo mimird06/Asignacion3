@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="website icon" type="png" href="/static/img/img1.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Recetas</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="/static/img/img2.png" class="logo">
+            <h1>Reci-py</h1>
+            <h3 class="subti"><i>Tu pagina favorita para recetas.</i></h3>
+        </div>
+        <nav>
+            <a href="{{url_for('inicio')}}"> Inicio </a>
+            <a href="{{url_for('recetas')}}"> Recetas </a>
+            <a href="{{url_for('agregar')}}"> Agregar </a>
+            <a href="#"> Contactos </a>
+        </nav>
+    </header>
+
+    <div class="cont-agregar">
+        <h2 class="recipe"> Recetas </h2>
+    </div>
+
+    <div id="prueba">
+        {% for info in acept %}
+        <div class="recuadros">
+            <img src="{{info[2]}}" class="cuadros">
+            <p class="text-cuadros">
+            </br>
+                <b>Nombre:</b> {{info[0]}} </br>
+                <b>Ingredientes: </b>
+                <ul>
+                    <li>{{info[1]}}</li>
+                </ul>
+            </p>
+        </div>
+    {% endfor %}
+    </div>
+
+    </br>
+    </br>
+    </br>
+    <footer>
+        <hr>
+        <p> 
+            © Todos los derechos reservados.
+        </br>
+            Hecho por Thammy F. Vargas A. 
+        </br>
+            Para Asignacion de Programacion III.
+        </p>
+    </footer>
+</body>
+</html>
