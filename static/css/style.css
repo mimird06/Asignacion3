@@ -299,10 +299,11 @@ footer{
 
 /*CSS alerta*/
 .alerta{
-    background-color: #FFBE00;
+    background-color: #f2f2f2;
+    padding: 5px 5px;
+    width: 200px;
 }
 .mensaje-alerta{
     font-family: "Raleway" sans-serif;
-    color: #222222;
-    text-align: center;
+    color: #CA1F3D;
 }
