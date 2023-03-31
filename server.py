@@ -29,5 +29,12 @@ def datos():
 
     return render_template('agregar.html', alerta=alerta)
 
+@servidor.route('/recetas')
+def recetas():
+
+    datos = db.execute('SELECT * FROM recetas')
+
+    return render_template('recetas.html', acept=datos)
+
 if __name__=='__main__':
     servidor.run(debug=True, port=6542)

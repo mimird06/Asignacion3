@@ -286,3 +286,23 @@ footer{
     color: #222222;
     text-align: center;
 }
+
+/*CSS recetas*/
+#prueba{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CSS alerta*/
+.alerta{
+    background-color: #FFBE00;
+}
+.mensaje-alerta{
+    font-family: "Raleway" sans-serif;
+    color: #222222;
+    text-align: center;
+}
