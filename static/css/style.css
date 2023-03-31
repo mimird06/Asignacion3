@@ -1,0 +1,309 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body{
+    background-color: #f4f1eb;
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.subti{
+    font-size: 20px;
+    color:#FFFFFF;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+header{
+    display: flex;
+    min-height: 50px;
+    background-color: #CA1F3D;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav a{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    -webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+
+}
+
+nav a:hover {
+    background: #f84e4f;
+    border-radius: 40px;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+
+    div{
+        flex-direction: column;
+    }
+
+    #prueba{
+        flex-direction: column;
+    }
+
+    form{
+        flex-direction: column;
+    }
+}
+
+/*CSS parte 1*/
+.parte1{
+    background-color: #f4f1eb;
+    text-align: center;
+    font-size: 20px;
+}
+
+.img-inicio{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 350px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*CSS footer*/
+
+footer{
+    background-color: #222222;
+    text-align: center;
+    color: #FFBE00;
+    padding-bottom: 5px;
+}
+
+/*CSS parte de la receta*/
+.parte3{
+    background-color: #FFBE00;
+    color: #25182E;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CSS titulo tipo h2*/
+.recipe{
+    background-color: #FFBE00;
+    color: #25182E;
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*CSS de la info*/
+.recuadros{
+    padding: 5px 5px 5px 5px;
+    width: 300px;
+    height: 75%;
+    background: #FFFDE3;
+    border-radius: 20px;
+    margin: 5px 0px 5px 0px;
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all 300ms;
+    gap: 20px;
+}
+
+.cuadros{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+}
+
+.text-cuadros{
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Animacion cuadros*/
+.recuadros:hover{
+    box-shadow:10px 10px 5px #222222;
+    transform: translate(-5px,-5px);
+}
+
+/*CSS parte Incio - Agregar*/
+.parte2{
+    background-color: #f2f2f2;
+    color: #25182E;
+    font-size: 20px;
+}
+
+.apoyo{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+}
+.text-inicio{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Boton agregar*/
+.submitBtn{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #CA1F3D;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 20px;
+    opacity: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: "Raleway" sans-serif;
+    position: absolute;
+    left: 40%;
+
+}
+
+.submitBtn:hover{
+    background-color: #f84e4f;
+    transform: translateY(-2px);
+}
+
+/* CSS formulario*/
+.formulario{
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 450px;
+    height: 490px;
+    position: absolute;
+    left: 33%;
+    margin-top: 20px;
+}
+
+.valores {
+    position: relative;
+    width: 250px;
+    color: black;
+    background: transparent;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+
+.input{
+    margin-top: 15px;
+    border: none;
+    outline: none;
+}
+
+.input:focus + .label{
+    top: -3px;
+    left: 3px;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222222
+}
+
+::placeholder{
+    color: transparent;
+}
+
+.input:not(::placeholder-shown)+ .label{
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.label{
+    font-weight: bold;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    font-size: 18px;
+    transition: 0.5s;
+    z-index: 0;
+} 
+
+.apoyo2{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*CSS ALERTA*/
+.alerta{
+    background-color: #FFBE00;
+    padding: 10px 20px;
+}
+.mensaje-alerta{
+    font-family: "Raleway" sans-serif;
+    color: #222222;
+    text-align: center;
+}
+
+/*CSS recetas*/
+#prueba{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CSS alerta*/
+.alerta{
+    background-color: #f2f2f2;
+    padding: 5px 5px;
+    width: 200px;
+}
+.mensaje-alerta{
+    font-family: "Raleway" sans-serif;
+    color: #CA1F3D;
+}

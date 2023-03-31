@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="website icon" type="png" href="/static/img/img1.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img src="/static/img/img2.png" class="logo">
+            <h1>Reci-py</h1>
+            <h3 class="subti"><i>Tu pagina favorita para recetas.</i></h3>
+        </div>
+        <nav>
+            <a href="{{url_for('inicio')}}"> Inicio </a>
+            <a href="{{url_for('recetas')}}"> Recetas </a>
+            <a href="{{url_for('agregar')}}"> Agregar </a>
+            <a href="#"> Contactos </a>
+        </nav>
+    </header>
+
+    <div id="contenido">
+        <div class="parte1">
+            <img src="/static/img/inicio1.jpg" class="img-inicio">
+            <img src="/static/img/inicio2.jpg" class="img-inicio">
+            <img src="/static/img/inicio3.jpg" class="img-inicio">
+            <p> Reci-py es un sitio sobre recetas, donde puedes encontrar o </br> subir tus recetas
+                favoritas...desde dulces o saldas, para merendar </br> o cenar, agridulce o sin salsa, chatarra o 
+                saludable, veganas o </br> solo carne, entre otras. </br> 
+            </p>
+        </div>
+
+        <h2 class="recipe"> <b> Recetas </b> </h2>
+
+        <div class="parte3">
+            <div class="recuadros">
+                <img src="/static/img/img6.jpg" class="cuadros">
+                <p class="text-cuadros">
+                </br>
+                    <b>Nombre:</b> Alfajores </br>
+                    <b>Ingredientes: </b>
+                    <ul>
+                        <li>Dulce de Luche</li>
+                        <li>Coco Rallado</li>
+                        <li>Harina y Maicena</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="recuadros">
+                <img src="/static/img/img9.jpg" class="cuadros">
+                <p class="text-cuadros">
+                </br>
+                    <b>Nombre:</b> Omelette con Queso y Bacon </br>
+                    <b>Ingredientes: </b>
+                    <ul>
+                        <li>Huevos</li>
+                        <li>Queso</li>
+                        <li>Bacon</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="recuadros">
+                <img src="/static/img/img3.jpg" class="cuadros">
+                <p class="text-cuadros">
+                </br>
+                    <b>Nombre:</b> Farfalle con Hongos </br>
+                    <b>Ingredientes: </b>
+                    <ul>
+                        <li>Hongos</li>
+                        <li>Pasta tipo Farfalle </li>
+                        <li>Salsa de preferencia</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="recuadros">
+                <img src="/static/img/img5.jpg" class="cuadros">
+                <p class="text-cuadros">
+                </br>
+                    <b>Nombre:</b> Espaguetis con camarones </br>
+                    <b>Ingredientes: </b>
+                    <ul>
+                        <li>Camarones limpios</li>
+                        <li>Espaguetis</li>
+                        <li>Salsa bechamel</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="recuadros">
+                <img src="/static/img/img4.jpg" class="cuadros">
+                <p class="text-cuadros">
+                </br>
+                    <b>Nombre:</b> Curry de garbanzos </br>
+                    <b>Ingredientes: </b>
+                    <ul>
+                        <li>Lata de garbanzos</li>
+                        <li>Curry</li>
+                        <li>Vegetales al gusto</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="recuadros">
+                <img src="/static/img/img8.jpg" class="cuadros">
+                <p class="text-cuadros">
+                </br>
+                    <b>Nombre:</b> Granola </br>
+                    <b>Ingredientes: </b>
+                    <ul>
+                        <li>Yogurt de sabor de eleccion</li>
+                        <li>Nueces </li>
+                        <li>Frutas</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        
+        <div class="parte2">
+            <img src="static/img/img1.png" class="apoyo">
+            <h2 class="text-inicio"> 
+                <b>
+                    Puedes subir tus recetas de manera facil y sencilla. 
+                </b>
+            </h2>
+            <p class="text-inicio" font-size="30px"> 
+                <i>
+                    "Suponer que la comida es la unica fuente de felicidad </br>
+                    es negar todos los estimulos que nos ofrece la vida."
+                </i>
+            </p>
+        </br>
+            <a href="{{url_for('agregar')}}">
+                <input type="submit" class="submitBtn" value="Agregar Receta">
+            </a>
+        </div>
+
+    </br>
+    </br>
+    </br>
+    <footer>
+        <hr>
+        <p> 
+            © Todos los derechos reservados.
+        </br>
+            Hecho por Thammy F. Vargas A. 
+        </br>
+            Para Asignacion de Programacion III.
+        
+        </p>
+    </footer>
+</body>
+</html>
