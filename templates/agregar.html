@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="website icon" type="png" href="/static/img/img2.png">
+    <link rel="website icon" type="png" href="/static/img/img1.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>Agregar Receta</title>
 </head>
@@ -19,7 +19,7 @@
         </div>
         <nav>
             <a href="{{url_for('inicio')}}"> Inicio </a>
-            <a href="#"> Recetas </a>
+            <a href="{{url_for('recetas')}}"> Recetas </a>
             <a href="{{url_for('agregar')}}"> Agregar </a>
             <a href="#"> Contactos </a>
         </nav>
@@ -28,5 +28,40 @@
     <div class="cont-agregar">
         <h2 class="recipe"> Agregar Receta </h2>
     </div>
+
+    <div class="ff2">
+
+        <div class="alerta">
+            <h3 class="mensaje-alerta">
+                <strong>
+                    {{alerta}}
+                </strong>
+            </h3>
+        </div>
+
+        <form class="formulario" action="/agregar/datos" method="post" >
+            <img src="/static/img/img9.png" class="apoyo2">
+            <legend>
+                <div class="valores">
+                    <label for="" class="label"> Nombre: </label>
+                    <input type="text" name="nombre" class="input" placeholder="a">
+                </div>
+
+                <div class="valores">
+                    <label for="" class="label"> Ingredientes: </label>
+                    <input type="text" name="ingredientes" class="input" placeholder="a">
+                </div>
+
+                <div class="valores">
+                    <label for="" class="label">Link imagen: </label>
+                    <input type="text" name="link-img" class="input" placeholder="a">
+                </div>
+                <input type="submit" class="submitBtn" value="Enviar">
+            </legend>
+        </form>
+    </div>
+</body>
+</html>
+
 </body>
 </html>
