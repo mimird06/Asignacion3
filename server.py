@@ -10,5 +10,9 @@ servidor = Flask(__name__)
 def inicio():
     return render_template('index.html')
 
+@servidor.route('/agregar')
+def agregar():
+    return render_template('agregar.html')
+
 if __name__=='__main__':
     servidor.run(debug=True, port=6542)
