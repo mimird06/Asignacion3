@@ -1,4 +1,4 @@
-# Asignacion3
+# Recipy-
 Asignación #3 de Programación III con Kelyn Tejada.
 
 Las respuestas del cuestionario se encuentran en el archivo llamado: Módulo V - Asignación #3 (Thammy Vargas).
